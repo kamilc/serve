@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/syntaqx/serve"
-	"github.com/syntaqx/serve/internal/config"
-	"github.com/syntaqx/serve/internal/middleware"
+	"github.com/kamilc/serve"
+	"github.com/kamilc/serve/internal/config"
+	"github.com/kamilc/serve/internal/middleware"
 )
 
 var getHTTPServerFunc = GetStdHTTPServer

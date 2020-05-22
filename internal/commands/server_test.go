@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/syntaqx/serve/internal/config"
-	"github.com/syntaqx/serve/mock"
+	"github.com/kamilc/serve/internal/config"
+	"github.com/kamilc/serve/mock"
 )
 
 func getMockHTTPServerFunc(shouldError bool) func(addr string, h http.Handler) HTTPServer {

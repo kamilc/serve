@@ -1,4 +1,4 @@
-module github.com/syntaqx/serve
+module github.com/kamilc/serve
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

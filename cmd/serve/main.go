@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/syntaqx/serve/internal/commands"
-	"github.com/syntaqx/serve/internal/config"
+	"github.com/kamilc/serve/internal/commands"
+	"github.com/kamilc/serve/internal/config"
 )
 
 var version = "0.0.0-develop"
