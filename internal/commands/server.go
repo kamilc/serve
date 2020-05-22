@@ -40,6 +40,7 @@ func Server(log *log.Logger, opt config.Flags, dir string) error {
 		middleware.Logger(log),
 		middleware.Recover(),
 		middleware.CORS(),
+		middleware.Headers(),
 	)
 
 	addr := net.JoinHostPort(opt.Host, opt.Port)
