@@ -12,6 +12,8 @@ func Headers() func(next http.Handler) http.Handler {
 			w.Header().Set("X-Frame-Options", "SAMEORIGIN")
 			w.Header().Set("X-Permitted-Cross-Domain-Policies", "none")
 			w.Header().Set("X-XSS-Protection", "1; mode=block")
+			w.Header().Set("X-Download-Options", "noopen")
+			w.Header().Set("Referrer-Policy", "strict-origin-when-cross-origin")
 			next.ServeHTTP(w, r)
 		}
 		return http.HandlerFunc(fn)
